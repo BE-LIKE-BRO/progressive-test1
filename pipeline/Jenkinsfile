@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('checkout') {
+            steps {
+                deleteDir()
+                checkout scm
+            }
+        }
+        
+        stage('run shell') {
+            steps {
+                dir("pipeline") {
+                    sh "bash shell.sh" 
+                }
+            }   
+        }
+    }
+
+    post {
+        failure {
+            cat env.txt
+        }
+    }
+}
