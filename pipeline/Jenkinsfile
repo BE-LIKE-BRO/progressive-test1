@@ -13,7 +13,7 @@ pipeline {
         stage('run shell') {
             steps {
                 dir("pipeline") {
-                    sh "bash shell.sh" 
+                    sh "./shell.sh" 
                 }
             }   
         }
