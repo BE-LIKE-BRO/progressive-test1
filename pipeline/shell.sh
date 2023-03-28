@@ -7,4 +7,4 @@ echo $env2
 
 echo $env1 > env.txt
 
-git clone https://github.com/BE-LIKE-BRO/progressive-test1.git
+git clone https://tfs.rgare.net/AURA/AURAOps/_git/zzz_migrated_aurabi_client_extract
