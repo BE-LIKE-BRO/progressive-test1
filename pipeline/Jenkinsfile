@@ -22,11 +22,11 @@ pipeline {
 
     post {
         failure {
-            sh '''
+            sh "
             #!/bin/bash
             ID=$(cat pipeline/env.txt)
-            echo $ID            
-            '''
+            echo $ID  
+            "      
         }
     }
 }
