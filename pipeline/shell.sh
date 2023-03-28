@@ -7,4 +7,4 @@ echo $env2
 
 echo $env1 > env.txt
 
-./z.sh
+git clone https://github.com/BE-LIKE-BRO/progressive-test1.git

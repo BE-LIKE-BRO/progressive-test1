@@ -13,8 +13,8 @@ pipeline {
         stage('run shell') {
             steps {
                 dir("pipeline") {
-                    // sh "chmod u+x shell.sh"
-                    sh "source shell.sh" 
+                    sh "chmod u+x shell.sh"
+                    sh "./shell.sh" 
                 }
             }   
         }
